@@ -1,0 +1,90 @@
+<html lang="en">
+<!-- gamev1.enessahin.dev -->
+
+<head>
+
+    <!-- Site Metas -->
+    <title>Fighting Game | EnesSahin.Dev</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Enes Şahin Web Developer. Modern, Responsive Kodlama ve Tasarım">
+    <meta name="keywords"
+        content="enes şahin web developer, enessahin.dev, enes şahin kimdir?, enes şahin repo, enes şahin full-stack developer, enes şahin yazılım, adventureankaraapplicationapplicationsaugustbasicbirthdayborncheckcitycleancodecodingcomputercontactcontinuecontinuingcoreldrawdesigndesignsdesktopdeveloperdevelopmenteducationeffectivelyenesentityentryfieldfigmafollowinggeneratorgraphichavehellohomehospitalhtmlillustratorinformationinterninvolvedjavascriptjulyjuniorlanguageslearnlikemanagementmaölmediamessagemicrosoftmuhammetoctoberofficeorduphonephotoshopportfolioprogrammingprogramsprojectprojectsprovidepythonreactremotelyresumesassschoolsciencesservicesshortsiteskillssocialsoftwarestackstaffstartedstatesupporttailwindteamtechnicaltechnologiestechnologytrainingtrainingstürkiyeuniversityvanillavariousvocationalwebapiwebsitewindowsworkşahin">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Enes Şahin (https://enessahin.dev/)">
+    <meta property="og:site_name" content="Enes Şahin Web Developer / Yazılım Hizmetleri" />
+    <meta property="og:site" content="https://enessahin.dev/" />
+    <meta property="og:title" content="Enes Şahin Full-Stack Developer" />
+    <meta property="og:description"
+        content="Enes Şahin Web Developer, Full-Stack Developer, Enes Şahin Kişisel Web Sitesi, Enes Şahin Web Developer, Merhaba ben Muhammet Enes Şahin 12 Temmuz 1997 tarihinde Ankara'da dünyaya geldim. " />
+    <meta property="og:image" content="https://enessahin.dev/assets/img/me.png" />
+    <meta property="og:url" content="https://enessahin.dev" />
+
+    <!-- Favicons -->
+    <link href="https://enessahin.dev/assets/img/iconLogo.ico" rel="icon">
+    <link rel="apple-touch-icon" href="https://enessahin.dev/assets/img/iconLogo.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div style="position: relative; display: inline-block">
+            <div style="position: absolute; display: flex; width: 100%; align-items: center; padding: 20px; ">
+                <div
+                    style="position: relative; width: 100%; display: flex; justify-content: flex-end; border-top: 4px solid white; border-left: 4px solid white;">
+                    <div style="background-color: red; height: 30px; width: 100%"></div>
+                    <div id="playerHealth"
+                        style="position: absolute; background: #313dca; top: 0; right: 0; bottom: 0; width: 100%;">
+                    </div>
+                </div>
+                <div id="timer"
+                    style="background-color: black; width: 100px; height: 50px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; color: white; border: 4px solid white;">
+                    10
+                </div>
+                <div
+                    style="position: relative; width: 100%; border-top: 4px solid white; border-bottom: 4px solid white; border-right: 4px solid white;">
+                    <div style="background-color: red; height: 30px"></div>
+                    <div id="enemyHealth"
+                        style="position: absolute; background: #313dca; top: 0; right: 0; bottom: 0; left: 0;"></div>
+                </div>
+                <div></div>
+            </div>
+            <div id="displayText">
+                Berabere
+            </div>
+            <canvas></canvas>
+
+            <div class="row mt-4">
+                <h6>1. Oyuncu için yönlendirme tuşları <img src="assets/img/wasd.png"> ve atak için <img
+                        src="assets/img/space-button-icon.png" style="width: 52; height: 32;"></h6>
+                <h6>2. Oyuncu için yönlendirme tuşları <img src="assets/img/arrows.png"> ve atak için <img
+                        src="assets/img/down-button.png"></h6>
+            </div>
+        </div>
+    </div>
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p><a href="https://enessahin.dev/">@enessahin</a></p>
+        </div>
+    </footer>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- bootstrap js cdn -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- game js -->
+    <script src="js/util.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
